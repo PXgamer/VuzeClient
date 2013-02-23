@@ -1,8 +1,13 @@
 <?php
 
 /**
- * Class for control Vuze
- * Require installed XML over Http plugin
+ * Class for control Vuze torrent-client.
+ * Require installed XML over Http plugin for Vuze.
+ * 
+ * Class is based on a class of application Azureus PHP Control Layer.
+ * The code has been rewritten, optimized and prepared for use in third-party projects.
+ * 
+ * @example https://github.com/Cosmologist/vuze-client/blob/master/README.md
  */
 class VuzeClient
 {

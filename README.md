@@ -1,10 +1,10 @@
 vuze-client
 ===========
 
-PHP library for control Vuze torrent-client.
+PHP class for control Vuze torrent-client.
 Require installed XML over Http plugin for Vuze.
 
-Library is based on a class of application <a href="http://strawp.net/azureus_php/">Azureus PHP Control Layer</a>.
+Class is based on a class of application <a href="http://strawp.net/azureus_php/">Azureus PHP Control Layer</a>.
 The code has been rewritten, optimized and prepared for use in third-party projects.
 
 Examples of use
