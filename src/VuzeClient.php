@@ -3,10 +3,10 @@
 /**
  * Class for control Vuze torrent-client.
  * Require installed XML over Http plugin for Vuze.
- * 
+ *
  * Class is based on a class of application Azureus PHP Control Layer.
  * The code has been rewritten, optimized and prepared for use in third-party projects.
- * 
+ *
  * @example https://github.com/Cosmologist/vuze-client/blob/master/README.md
  */
 class VuzeClient
@@ -53,7 +53,7 @@ class VuzeClient
     /**
      * Start or restart torrent downloading
      *
-     * @param string/int $id torrent ID
+     * @param string /int $id torrent ID
      */
     public function start($id)
     {
@@ -63,7 +63,7 @@ class VuzeClient
     /**
      * Force start torrent
      *
-     * @param string/int $id torrent ID
+     * @param string /int $id torrent ID
      */
     public function forceStart($id)
     {
@@ -73,7 +73,7 @@ class VuzeClient
     /**
      * Stop torrent downloading
      *
-     * @param string/int $id torrent ID
+     * @param string /int $id torrent ID
      */
     public function stop($id)
     {
@@ -83,7 +83,7 @@ class VuzeClient
     /**
      * Move up torrent
      *
-     * @param string/int $id torrent ID
+     * @param string /int $id torrent ID
      */
     public function moveUp($id)
     {
@@ -93,7 +93,7 @@ class VuzeClient
     /**
      * Move down torrent
      *
-     * @param string/int $id torrent ID
+     * @param string /int $id torrent ID
      */
     public function moveDown($id)
     {
@@ -103,7 +103,7 @@ class VuzeClient
     /**
      * Remove torrent
      *
-     * @param string/int $id torrent ID
+     * @param string /int $id torrent ID
      */
     public function remove($id)
     {
@@ -196,7 +196,7 @@ class VuzeClient
      * @param array $parameter sending parameter
      * @return array parsed response from service
      */
-    protected function call($method, $objectId = "", $parameter = NULL)
+    protected function call($method, $objectId = "", $parameter = null)
     {
         $xml = "";
 
@@ -248,10 +248,10 @@ class VuzeClient
         // Generate the request to server
         $request =
             "POST /process.cgi HTTP/1.1\r\n" .
-                "Host: " . $this->host . ":" . $this->port . "\r\n" .
-                $auth .
-                "Content-Length: " . strlen($xml) . "\r\n\r\n" .
-                $xml;
+            "Host: " . $this->host . ":" . $this->port . "\r\n" .
+            $auth .
+            "Content-Length: " . strlen($xml) . "\r\n\r\n" .
+            $xml;
 
         // Create a TCP/IP socket
         $socket = socket_create(AF_INET, SOCK_STREAM, SOL_TCP);
