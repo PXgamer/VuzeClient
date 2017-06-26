@@ -1,10 +1,15 @@
 <?php
 
+namespace Cosmologist\VuzeClient;
+
 /**
- * Class for control Vuze torrent-client.
+ * Class VuzeClient
+ * @package Cosmologist\VuzeClient
+ *
+ * A class for controlling the Vuze torrent client.
  * Require installed XML over Http plugin for Vuze.
  *
- * Class is based on a class of application Azureus PHP Control Layer.
+ * This class is based on a class of application Azureus PHP Control Layer.
  * The code has been rewritten, optimized and prepared for use in third-party projects.
  *
  * @example https://github.com/Cosmologist/vuze-client/blob/master/README.md
