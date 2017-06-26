@@ -30,7 +30,7 @@ class VuzeClient
      * @param string $username username for access to Vuze (optionally)
      * @param string $password password for access to Vuze (optionally)
      */
-    public function VuzeClient($host = '127.0.0.1', $port = 6884, $username = '', $password = '')
+    public function __construct($host = '127.0.0.1', $port = 6884, $username = '', $password = '')
     {
         $this->host = $host;
         $this->port = $port;
