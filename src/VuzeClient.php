@@ -53,7 +53,7 @@ class VuzeClient
     /**
      * Start or restart torrent downloading
      *
-     * @param string /int $id torrent ID
+     * @param string|int $id torrent ID
      */
     public function start($id)
     {
@@ -63,7 +63,7 @@ class VuzeClient
     /**
      * Force start torrent
      *
-     * @param string /int $id torrent ID
+     * @param string|int $id torrent ID
      */
     public function forceStart($id)
     {
@@ -73,7 +73,7 @@ class VuzeClient
     /**
      * Stop torrent downloading
      *
-     * @param string /int $id torrent ID
+     * @param string|int $id torrent ID
      */
     public function stop($id)
     {
@@ -83,7 +83,7 @@ class VuzeClient
     /**
      * Move up torrent
      *
-     * @param string /int $id torrent ID
+     * @param string|int $id torrent ID
      */
     public function moveUp($id)
     {
@@ -93,7 +93,7 @@ class VuzeClient
     /**
      * Move down torrent
      *
-     * @param string /int $id torrent ID
+     * @param string|int $id torrent ID
      */
     public function moveDown($id)
     {
@@ -103,7 +103,7 @@ class VuzeClient
     /**
      * Remove torrent
      *
-     * @param string /int $id torrent ID
+     * @param string|int $id torrent ID
      */
     public function remove($id)
     {
@@ -177,7 +177,7 @@ class VuzeClient
     }
 
     /**
-     * Generate uniqal request ID
+     * Generate unique request ID
      *
      * @return integer request ID
      */
@@ -234,7 +234,7 @@ class VuzeClient
      *
      * @param string $xml XML request to Xml over Http plugin
      * @throws Exception exceptions trought when method can't connect to server, or when response format is unexpected
-     * @return string reponse from plugin in XML
+     * @return string response from plugin in XML
      */
     protected function sendRequest($xml)
     {
@@ -307,8 +307,3 @@ class VuzeClient
         return $arr;
     }
 }
-
-//$client = new VuzeClient('127.0.0.1', 6884);
-//$client->addTorrent(file_get_contents('/home/cosmologist/Downloads/Steve_Huerta___Take_Me_Closer__AMA005_.torrent'));
-//$client->addTorrentUrl('http://localhost/2.torrent');
-//print_r($client->getDownloads());
