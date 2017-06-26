@@ -1,0 +1,12 @@
+{
+  "name": "cosmologist/vuze-client",
+  "description": "A PHP class for controlling the Vuze torrent client.",
+  "minimum-stability": "stable",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Cosmologist\\VuzeClient\\": "src/"
+    }
+  }
+}
