@@ -293,7 +293,7 @@ class VuzeClient
     /**
      * Convert object to array recursively
      *
-     * @param object $obj
+     * @param object|array $obj
      * @return array mixed
      */
     function deepObjectToArray($obj)
